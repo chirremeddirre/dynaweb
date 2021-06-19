@@ -1,32 +1,117 @@
 #container{
     display:flex;
     flex-direction: column;
-    background-color: #A3CFD4;
-    color: #00004E;
+    background-color: #DCF0F2;
+    color: #0F2624;
 }
 
 header{
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #A3CFD4;
 }
+
+
 h1{
-    color: #E3CEAF
+    color: #F28705;
+    font-family: "Permanent Marker", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+nav {
+    background-color: #49736F;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    margin-top: 110px;
+}
+
+
+nav a {
+    float: left;
+    color: #DCF0F2;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover {
+    background-color: #d19767;
+    color: #0F2624;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+#classes table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#classes td, #classes th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#classes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #49736F;
+  color: white;
 }
 
 
 h2{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
     display: block;
     margin: 0 auto;
+    border: 2px solid #0F2624;
 }
 
 .date{
     text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 table{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+#newsletter h2{
+    text-align: left;
+    font-style: italic;
+}
+#newsletter {
+    width: 30%;
+    padding-left: 10px;
+    margin-left: 10px;
+    float: left;
+    background-color: lightgray;
+}
+
+#newsletter ul{
+    list-style-type: none;
+}
+
+
+a {
+    color: #d19767;
+}
+main{
+    margin-top: 200px;
+}
+
+
