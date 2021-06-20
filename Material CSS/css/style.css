@@ -11,12 +11,16 @@ header{
     width: 100%;
     top: 0;
     background-color: #A3CFD4;
+    font-family: "Permanent Marker", sans-serif;
 }
 
+header p{
+  font-size: 1.2em;
 
-h1{
+}
+
+header h1{
     color: #F28705;
-    font-family: "Permanent Marker", sans-serif;
     font-style: normal;
     font-variant: normal;
 }
@@ -27,6 +31,7 @@ nav {
     position: fixed;
     width: 100%;
     margin-top: 110px;
+
 }
 
 
@@ -38,6 +43,7 @@ nav a {
     font-size: 1.3em;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Permanent Marker", sans-serif;
 }
 nav a:hover {
     background-color: #d19767;
@@ -70,6 +76,7 @@ nav ul{
 h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
 }
 
 img{
@@ -95,11 +102,12 @@ table{
     font-style: italic;
 }
 #newsletter {
-    width: 30%;
+    margin: auto;
     padding-left: 10px;
     margin-left: 10px;
     float: left;
     background-color: lightgray;
+    border-bottom: 10px solid #DCF0F2;
 }
 
 #newsletter ul{
@@ -114,4 +122,12 @@ main{
     margin-top: 200px;
 }
 
+p {
+  font-size: 1.1em;
+}
 
+footer {
+  padding-top: 5px;
+  text-align: center;
+  border-top: 1px solid #000;
+}
