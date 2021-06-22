@@ -1,23 +1,32 @@
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
 #container{
     display:flex;
     flex-direction: column;
     background-color: #DCF0F2;
     background-size: 100% 100%;
+    width: 100%;
     color: #0F2624;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
 }
 
 
 header{
     text-align: center;
-    position: fixed;
+    width: 100%;
     max-width: 100%;
-    top: 0;
+    background-size: 100% 100%;
     background-color: #A3CFD4;
     font-family: "Permanent Marker", sans-serif;
 }
 
 header p{
-  font-size: 1.2em;
+  font-size: 1.2rem;
 
 }
 
@@ -25,26 +34,26 @@ header h1{
     color: #F28705;
     font-style: normal;
     font-variant: normal;
+    margin-top: 2em;
+
 }
 
+@media (max-width:600px){
 nav {
     background-color: #49736F;
     overflow: hidden;
     position: fixed;
+    float: left;
+    background-size: 100% 100%;
     width: 100%;
-    margin-top: 110px;
-
+    top: 0;
+}
 }
 
-
 nav a {
-    float: left;
     color: #DCF0F2;
-    text-align: center;
-    padding: 10px 10px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: "Permanent Marker", sans-serif;
 }
 nav a:hover {
@@ -52,9 +61,17 @@ nav a:hover {
     color: #0F2624;
 }
 
+@media (max-widht:600px){
 nav ul{
-    list-style-type: none;
+  display:flex;
+  list-style-type: none;
+  white-space: no-wrap;
+  justify-content: space-evenly;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
+}
+
 
 #classes table{
   font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +95,7 @@ nav ul{
 h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7em;
+    font-size: 1.7rem;
 }
 
 img{
@@ -98,36 +115,81 @@ table{
 }
 
 
-
 #newsletter h2{
     text-align: left;
     font-style: italic;
 }
 #newsletter {
     margin: auto;
-    padding-left: 10px;
-    margin-left: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0px;
     float: left;
     background-color: lightgray;
     border-bottom: 10px solid #DCF0F2;
 }
 
 #newsletter ul{
-    list-style-type: none;
+  list-style-type: none;
+  list-style: none;
+  margin-left: 0;
 }
 
+#newsletter ul li{
+  margin-left: 0;
+}
 
 a {
     color: #d19767;
 }
 main{
-    margin-top: 200px;
+    margin-top: 2em;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
+}
+@media (min-width: 600px){
+  nav {
+    background-color: #49736F;
+    overflow: hidden;
+    position: fixed;
+    background-size: 100% 100%;
+    width: auto;
+  }
+
+}
+@media (min-width: 600px){
+nav ul{
+    list-style-type: none;
+    white-space: no-wrap;
+    justify-content: space-evenly;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
 }
 
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
 footer {
   padding-top: 5px;
   text-align: center;
